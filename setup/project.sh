@@ -80,7 +80,7 @@ if [ "$NO_BASE" = true ]; then
     IS_FROM_BASE=false
     echo "📦 Installing directly from GitHub (no base installation)"
     # Set BASE_URL for GitHub downloads
-    BASE_URL="https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main"
+    BASE_URL="https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master"
     # Download and source functions when running from GitHub
     TEMP_FUNCTIONS="/tmp/cyberark-ai-spec-os-functions-$$.sh"
     curl -sSL "${BASE_URL}/setup/functions.sh" -o "$TEMP_FUNCTIONS"
