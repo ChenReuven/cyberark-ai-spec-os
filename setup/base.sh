@@ -60,7 +60,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo ""
-echo "🚀 Agent OS Base Installation"
+echo "🚀 Cyberark AI Spec OS Base Installation"
 echo "============================="
 echo ""
 
@@ -68,7 +68,7 @@ echo ""
 CURRENT_DIR=$(pwd)
 INSTALL_DIR="$CURRENT_DIR/.cyberark-spec-os"
 
-echo "📍 The Agent OS base installation will be installed in the current directory ($CURRENT_DIR)"
+echo "📍 The Cyberark AI Spec OS base installation will be installed in the current directory ($CURRENT_DIR)"
 echo ""
 
 echo "📁 Creating base directories..."
@@ -82,7 +82,7 @@ curl -sSL "${BASE_URL}/setup/functions.sh" -o "$INSTALL_DIR/setup/functions.sh"
 source "$INSTALL_DIR/setup/functions.sh"
 
 echo ""
-echo "📦 Installing the latest version of Agent OS from the Agent OS GitHub repository..."
+echo "📦 Installing the latest version of Cyberark AI Spec OS from the Cyberark AI Spec OS GitHub repository..."
 
 # Install /instructions, /standards, and /commands folders and files from GitHub
 install_from_github "$INSTALL_DIR" "$OVERWRITE_INSTRUCTIONS" "$OVERWRITE_STANDARDS"
@@ -97,7 +97,7 @@ download_file "${BASE_URL}/config.yml" \
 
 # Download setup/project.sh
 echo ""
-echo "📥 Downloading project setup script..."
+echo "📥 Downloading Cyberark AI Spec OS project setup script..."
 download_file "${BASE_URL}/setup/project.sh" \
     "$INSTALL_DIR/setup/project.sh" \
     "true" \
