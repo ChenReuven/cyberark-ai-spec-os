@@ -29,3 +29,7 @@ Docs, installation, useage, & best practices 👉 [It's all here](https://ChenRe
 Created by Chen Reuven, and based on Brian Casel the creator of [Builder Methods](https://ChenReuven.com), where Brian helps professional software developers and teams build with AI.
 
 
+curl -sSL -H "Authorization: token {Your Token}" https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/replace.agent-os-with-.cyberark-spec-os/setup/base.sh | bash -s -- --claude-code --cursor
+
+# If your base installation is in your home directory:
+~/.cyberark-spec-os/setup/project.sh
