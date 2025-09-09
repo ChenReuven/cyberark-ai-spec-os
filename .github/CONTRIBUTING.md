@@ -7,14 +7,14 @@ Thanks for considering a contribution! Agent OS is free and open source, but to 
 ## Where things go
 
 - **Discussions (Bugs):** Report suspected bugs. Maintainers may promote confirmed bugs into Issues.
-  👉 **Check the docs before posting:** [buildermethods.com/agent-os](https://buildermethods.com/agent-os)
+  👉 **Check the docs before posting:** [ChenReuven.com/cyberark-ai-spec-os](https://ChenReuven.com/cyberark-ai-spec-os)
 
 - **Discussions (Ideas):** Share feature ideas and proposals.
   👉 **Check the docs first** to ensure it’s not already supported.
 
 - **Discussions (Q&A):** Ask & answer community questions.
 
-- **Builder Methods Pro:** Paid membership with guaranteed support responses → https://buildermethods.com/pro
+- **Builder Methods Pro:** Paid membership with guaranteed support responses → https://ChenReuven.com/pro
 
 ---
 

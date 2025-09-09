@@ -1,7 +1,7 @@
 # Agent OS Configuration
 
 # Refer to the official Agent OS documentation at:
-# https://buildermethods.com/agent-os
+# https://ChenReuven.com/cyberark-ai-spec-os
 
 agent_os_version: 1.4.1
 

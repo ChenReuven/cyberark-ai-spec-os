@@ -199,7 +199,7 @@ Verify installation completeness and provide clear next steps for the user to st
 
   1. Review the generated documentation in `.cyberark-spec-os/product/`
   2. Make any necessary adjustments to reflect your vision
-  3. See the Agent OS README for usage instructions: https://github.com/buildermethods/agent-os
+  3. See the Agent OS README for usage instructions: https://github.com/ChenReuven/cyberark-ai-spec-os
   4. Start using Agent OS for your next feature:
      ```
      @.cyberark-spec-os/instructions/core/create-spec.md

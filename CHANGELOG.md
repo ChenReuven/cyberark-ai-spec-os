@@ -65,11 +65,11 @@ To install the Agent OS base installation,
 
 2. Run one of these commands:
   - Agent OS with Claude Code support:
-  `curl -sSL https://raw.githubusercontent.com/buildermethods/agent-os/main/setup/base.sh | bash -s -- --claude-code`
+  `curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code`
   - Agent OS with Cursor support:
-  `curl -sSL https://raw.githubusercontent.com/buildermethods/agent-os/main/setup/base.sh | bash -s -- --cursor`
+  `curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --cursor`
   - Agent OS with Claude Code & Cursor support:
-  `curl -sSL https://raw.githubusercontent.com/buildermethods/agent-os/main/setup/base.sh | bash -s -- --claude-code --cursor`
+  `curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code --cursor`
 
 3. Customize your /standards (just like earlier versions)
 
@@ -82,12 +82,12 @@ To install the Agent OS base installation,
 
 Your project installation command will be based on where you installed the Agent OS base installation.
 - If you've installed it to your system's home folder, then your project installation command will be `~/.cyberark-spec-os/setup/project.sh`.
-- If you've installed it elsewhere, your command will be `/path/to/agent-os/setup/project.sh`
+- If you've installed it elsewhere, your command will be `/path/to/cyberark-ai-spec-os/setup/project.sh`
 (after your base installation, it will show you _your_ project installation command. It's a good idea to save it or make an alias if you work on many projects.)
 
 If (for whatever reason) you didn't install the base installation, you can still install Agent OS directly into a project, by pulling it directly off of the public github repo using the following command.
 - Note: This means your standards folder won't inherit your defaults from a base installation. You'd need to customize the files in the standards folder for this project.
-`curl -sSL https://raw.githubusercontent.com/buildermethods/agent-os/main/setup/project.sh | bash -s -- --no-base --claude-code --cursor`
+`curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/project.sh | bash -s -- --no-base --claude-code --cursor`
 
 ### Agent OS config.yml
 
@@ -126,7 +126,7 @@ Follow these steps to update a previous version to 1.4.0:
 2. Navigate to your home directory (or whichever location you want to have your Agent OS base installation)
 
 3. Run the following to command, which includes flags to overwrite your /instructions (remove the --cursor flag if not using Cursor):
-`curl -sSL https://raw.githubusercontent.com/buildermethods/agent-os/main/setup/base.sh | bash -s -- --overwrite-instructions --claude-code --cursor`
+`curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --overwrite-instructions --claude-code --cursor`
 
 4. If your ~/.claude/commands contain Agent OS commands, remove those and copy the versions that are now in your base installation's commands folder into your _project's_ `.claude/commands` folder.
 
@@ -272,11 +272,11 @@ Follow these steps to update a previous version to 1.4.0:
 - Task management with TDD workflow
 - Spec creation and organization system
 
-[1.4.1]: https://github.com/buildermethods/agent-os/compare/v1.4.0...v1.4.1
-[1.4.2]: https://github.com/buildermethods/agent-os/compare/v1.4.1...v1.4.2
-[1.4.0]: https://github.com/buildermethods/agent-os/compare/v1.3.1...v1.4.0
-[1.3.1]: https://github.com/buildermethods/agent-os/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/buildermethods/agent-os/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/buildermethods/agent-os/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/buildermethods/agent-os/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/buildermethods/agent-os/releases/tag/v1.0.0
+[1.4.1]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.4.0...v1.4.1
+[1.4.2]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.4.1...v1.4.2
+[1.4.0]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.3.1...v1.4.0
+[1.3.1]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/ChenReuven/cyberark-ai-spec-os/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/ChenReuven/cyberark-ai-spec-os/releases/tag/v1.0.0
