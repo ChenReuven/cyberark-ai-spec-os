@@ -66,7 +66,7 @@ echo ""
 
 # Set installation directory to current directory
 CURRENT_DIR=$(pwd)
-INSTALL_DIR="$CURRENT_DIR/.agent-os"
+INSTALL_DIR="$CURRENT_DIR/.cyberark-spec-os"
 
 echo "📍 The Agent OS base installation will be installed in the current directory ($CURRENT_DIR)"
 echo ""

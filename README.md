@@ -1,4 +1,4 @@
-<img width="1280" height="640" alt="cyberark-ai-spec-os" src="assets/cyberark-ai-spec-os.png" />
+<img width="350" height="350" alt="cyberark-ai-spec-os" src="assets/cyberark-ai-spec-os.png" />
 
 ## Your system for spec-driven agentic development.
 

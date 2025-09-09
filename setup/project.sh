@@ -70,7 +70,7 @@ echo ""
 # Get project directory info
 CURRENT_DIR=$(pwd)
 PROJECT_NAME=$(basename "$CURRENT_DIR")
-INSTALL_DIR="./.agent-os"
+INSTALL_DIR="./.cyberark-spec-os"
 
 echo "📍 Installing Agent OS to this project's root directory ($PROJECT_NAME)"
 echo ""
@@ -273,8 +273,8 @@ echo ""
 echo "✅ Agent OS has been installed in your project ($PROJECT_NAME)!"
 echo ""
 echo "📍 Project-level files installed to:"
-echo "   .agent-os/instructions/    - Agent OS instructions"
-echo "   .agent-os/standards/       - Development standards"
+echo "   .cyberark-spec-os/instructions/    - Agent OS instructions"
+echo "   .cyberark-spec-os/standards/       - Development standards"
 
 if [ "$CLAUDE_CODE" = true ]; then
     echo "   .claude/commands/          - Claude Code commands"

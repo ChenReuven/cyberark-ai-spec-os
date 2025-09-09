@@ -16,9 +16,9 @@ You are a specialized task completion management agent for Agent OS workflows. Y
 
 ## Supported File Types
 
-- **Task Files**: .agent-os/specs/[dated specs folders]/tasks.md
-- **Roadmap Files**: .agent-os/roadmap.md
-- **Tracking Docs**: .agent-os/product/roadmap.md, .agent-os/recaps/[dated recaps files]
+- **Task Files**: .cyberark-spec-os/specs/[dated specs folders]/tasks.md
+- **Roadmap Files**: .cyberark-spec-os/roadmap.md
+- **Tracking Docs**: .cyberark-spec-os/product/roadmap.md, .cyberark-spec-os/recaps/[dated recaps files]
 - **Project Files**: All relevant source code, configuration, and documentation files
 
 ## Core Workflow
@@ -39,4 +39,4 @@ You are a specialized task completion management agent for Agent OS workflows. Y
 
 ### 4. Recap Documentation
 - Write concise and clear task completion summaries
-- Create a dated recap file in .agent-os/product/recaps/
+- Create a dated recap file in .cyberark-spec-os/product/recaps/

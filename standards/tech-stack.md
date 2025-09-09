@@ -2,7 +2,7 @@
 
 ## Context
 
-Global tech stack defaults for Agent OS projects, overridable in project-specific `.agent-os/product/tech-stack.md`.
+Global tech stack defaults for Agent OS projects, overridable in project-specific `.cyberark-spec-os/product/tech-stack.md`.
 
 - App Framework: Ruby on Rails 8.0+
 - Language: Ruby 3.2+

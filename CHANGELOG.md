@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Replaced Decisions with Recaps
 
-Earlier versions added a decisions.md inside a project's .agent-os/product/.  In practice, this was rarely used and didn't help future development.
+Earlier versions added a decisions.md inside a project's .cyberark-spec-os/product/.  In practice, this was rarely used and didn't help future development.
 
 It's been replaced with a new system for creating "Recaps"—short summaries of what was built—after every feature spec's implementation has been completed.  Similar to a changelog, but more descriptive and context-focused.  These recaps are easy to reference by both humans and AI agents.
 
@@ -75,13 +75,13 @@ To install the Agent OS base installation,
 
 **Project installation**
 
-- Now each project codebase gets it's own self-contained installation of Agent OS.  It no longer references instructions or standards that reside elsewhere on your system.  These all get installed directly into your project's .agent-os folder, which brings several benefits:
+- Now each project codebase gets it's own self-contained installation of Agent OS.  It no longer references instructions or standards that reside elsewhere on your system.  These all get installed directly into your project's .cyberark-spec-os folder, which brings several benefits:
   - No external references = more reliable Agent OS commands & workflows.
   - You can commit your instructions, standards, Claude Code commands and agents to your project's github repo for team access.
   - You can customize standards differently per project than what's in your base installation.
 
 Your project installation command will be based on where you installed the Agent OS base installation.
-- If you've installed it to your system's home folder, then your project installation command will be `~/.agent-os/setup/project.sh`.
+- If you've installed it to your system's home folder, then your project installation command will be `~/.cyberark-spec-os/setup/project.sh`.
 - If you've installed it elsewhere, your command will be `/path/to/agent-os/setup/project.sh`
 (after your base installation, it will show you _your_ project installation command. It's a good idea to save it or make an alias if you work on many projects.)
 
@@ -102,7 +102,7 @@ If you work on different types of projects, you can define different sets of sta
 
 - By default, a new installation of Agent OS into a project will copy its instructions and standards from your base installation's /instructions and /standards.
 - You can define additional project types by doing the following:
-  - Setup a folder (typically inside your base installation's .agent-os folder, but it can be anywhere on your system) which contains /instructions and /standards folders (copy these from your base install, then customize).
+  - Setup a folder (typically inside your base installation's .cyberark-spec-os folder, but it can be anywhere on your system) which contains /instructions and /standards folders (copy these from your base install, then customize).
   - Define the project type's folder location on your system in your base install's config.yml
 - Using project types:
   - If you've named a project type, 'ruby-on-rails', when running your project install command, add the flag --project-type=ruby-on-rails.
@@ -115,7 +115,7 @@ This update does away with the old installation script files:
 - setup-claude-code.sh (now you add --claude-code flag to the install commands or enable it in your Agent OS config.yml)
 - setup-cursor.sh (now you add --cursor flag to the install commands or enable it in your Agent OS config.yml)
 
-Claude Code Agent OS commands now should _not_ be installed in the `~/.agent-os/.claude/commands` folder.  Now, these are copied from ~/.agent-os/commands into each project's `~/.claude/commands` folder (this prevents duplicate commands showing in in Claude Code's commands list).  The same approach applies to Claude Code subagents files.
+Claude Code Agent OS commands now should _not_ be installed in the `~/.cyberark-spec-os/.claude/commands` folder.  Now, these are copied from ~/.cyberark-spec-os/commands into each project's `~/.claude/commands` folder (this prevents duplicate commands showing in in Claude Code's commands list).  The same approach applies to Claude Code subagents files.
 
 ### Upgrading to version 1.4.0
 
@@ -130,7 +130,7 @@ Follow these steps to update a previous version to 1.4.0:
 
 4. If your ~/.claude/commands contain Agent OS commands, remove those and copy the versions that are now in your base installation's commands folder into your _project's_ `.claude/commands` folder.
 
-5. Navigate to your project. Run your project installation command to install Agent OS instructions and standards into your project's installation. If your Agent OS base installation is in your system's home folder (like previous versions), then your project installation will be: `~/.agent-os/setup/project.sh`
+5. Navigate to your project. Run your project installation command to install Agent OS instructions and standards into your project's installation. If your Agent OS base installation is in your system's home folder (like previous versions), then your project installation will be: `~/.cyberark-spec-os/setup/project.sh`
 
 ## [1.3.1] - 2025-08-02
 
