@@ -25,3 +25,6 @@ Docs, installation, useage, & best practices 👉 [It's all here](https://ChenRe
 ---
 
 ### Created by Chen Reuven
+
+
+curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code --cursor

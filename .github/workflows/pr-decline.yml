@@ -22,7 +22,7 @@ permissions:
 env:
   REPO: ${{ github.repository }}
   IDEAS_URL: https://github.com/ChenReuven/cyberark-ai-spec-os/discussions/categories/ideas
-  CONTRIBUTING_URL: https://github.com/ChenReuven/cyberark-ai-spec-os/blob/main/.github/CONTRIBUTING.md
+  CONTRIBUTING_URL: https://github.com/ChenReuven/cyberark-ai-spec-os/blob/master/.github/CONTRIBUTING.md
 
 jobs:
   decline:

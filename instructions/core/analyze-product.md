@@ -96,7 +96,7 @@ Use the context-fetcher subagent to supplement codebase analysis with business c
 Execute our standard flow for installing Agent OS in existing products
 
 <execution_parameters>
-  <main_idea>[DERIVED_FROM_ANALYSIS_AND_USER_INPUT]</main_idea>
+  <main_idea>[DERIVED_FROM_ANALYSIS_AND_USER_INPUT]</master_idea>
   <key_features>[IDENTIFIED_IMPLEMENTED_AND_PLANNED_FEATURES]</key_features>
   <target_users>[FROM_USER_CONTEXT]</target_users>
   <tech_stack>[DETECTED_FROM_CODEBASE]</tech_stack>
