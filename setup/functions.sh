@@ -4,7 +4,7 @@
 # Used by both base.sh and project.sh
 
 # Base URL for raw GitHub content
-BASE_URL="https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master"
+BASE_URL="https://raw.githubusercontent.com/chenreuven/cyberark-ai-spec-os/master"
 
 # Function to copy files from source to destination
 copy_file() {
