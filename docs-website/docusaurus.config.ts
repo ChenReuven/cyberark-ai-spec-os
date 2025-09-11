@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '🌱 CyberArk AI Spec OS',
+  title: 'CyberArk AI Spec OS',
   tagline: 'Build smarter, high-quality software with AI.',
   favicon: 'img/favicon.ico',
 

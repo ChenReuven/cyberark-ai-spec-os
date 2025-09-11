@@ -7,6 +7,8 @@ type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
+  icon: string;
+  gradient: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -19,6 +21,8 @@ const FeatureList: FeatureItem[] = [
         writing undifferentiated code with the help of Spec-Driven Development.
       </>
     ),
+    icon: '📋',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   },
   {
     title: 'Build Your Way, Not Their Way',
@@ -29,6 +33,8 @@ const FeatureList: FeatureItem[] = [
         Agent OS transforms AI coding agents from confused interns into productive developers.
       </>
     ),
+    icon: '⚙️',
+    gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
   },
   {
     title: 'Quality Code on First Try',
@@ -40,18 +46,25 @@ const FeatureList: FeatureItem[] = [
         quality code on the first try—not the fifth.
       </>
     ),
+    icon: '✨',
+    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, icon, gradient}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon} style={{ background: gradient }}>
+          <span className={styles.iconEmoji}>{icon}</span>
+        </div>
+        <div className={styles.featureContent}>
+          <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+          <p className={styles.featureDescription}>{description}</p>
+        </div>
+        <div className={styles.featureSvg}>
+          <Svg role="img" />
+        </div>
       </div>
     </div>
   );
@@ -61,6 +74,12 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.featuresHeader}>
+          <h2 className={styles.featuresTitle}>Why Choose CyberArk AI Spec OS?</h2>
+          <p className={styles.featuresSubtitle}>
+            Transform your development workflow with AI-powered tools that understand your needs
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
