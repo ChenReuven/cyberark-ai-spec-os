@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -11,32 +11,33 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Spec-Driven Development',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        An effort to allow organizations to focus on product scenarios rather than 
+        writing undifferentiated code with the help of Spec-Driven Development.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Build Your Way, Not Their Way',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A system to make AI coding agents build your way, not their way. 
+        Agent OS transforms AI coding agents from confused interns into productive developers.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Quality Code on First Try',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        With structured workflows that capture your standards, your stack, and the unique 
+        details of your codebase, Agent OS gives your agents the specs they need to ship 
+        quality code on the first try—not the fifth.
       </>
     ),
   },
