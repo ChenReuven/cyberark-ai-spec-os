@@ -2,46 +2,81 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome to CyberArk AI Spec OS
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Transform your AI coding agents from confused interns into productive developers with **Spec-Driven Development**.
 
-## Getting Started
+## What is CyberArk AI Spec OS?
 
-Get started by **creating a new site**.
+CyberArk AI Spec OS is a system that makes AI coding agents build **your way, not their way**. It provides structured workflows that capture your standards, your stack, and the unique details of your codebase, giving your agents the specs they need to ship quality code on the first try—not the fifth.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Works seamlessly with both **greenfield** (new) and **brownfield** (existing) projects, integrating into any development workflow without disruption.
 
-### What you'll need
+### Key Benefits
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- 🎯 **Complete Context** - Your standards, product vision, and detailed specs working together
+- 🔄 **Structured Development** - Proven workflows that replace random prompting with systematic development
+- ⚙️ **Your Standards** - Completely customizable to match how your team operates
 
-## Generate a new site
+## Three Layers of Context
 
-Generate a new Docusaurus site using the **classic template**.
+CyberArk AI Spec OS works by layering context—just like you'd onboard a human developer:
 
-The classic template will automatically be added to your project after you run the command:
+### 1. Your Standards
+- **Tech Stack** — Your frameworks, libraries, and tools
+- **Code Style** — Your formatting rules and conventions
+- **Best Practices** — Your development philosophy and patterns
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### 2. Your Product
+- **Mission** — What you're building and why
+- **Roadmap** — Features shipped, in progress, and planned
+- **Decisions** — Key architectural and technical choices
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### 3. Your Specs
+- **Requirements** — Goals and user stories for each feature
+- **Technical Specs** — API design, database changes, UI requirements
+- **Task Breakdown** — Step-by-step implementation plans
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Quick Start
 
-## Start your site
+Ready to get started? Choose your path:
 
-Run the development server:
+### 🚀 Fast Setup (Recommended)
+Follow our [Quick Installation Guide](./installation/quick-start) for the fastest way to get up and running.
 
-```bash
-cd my-website
-npm run start
-```
+### ⚙️ Custom Installation
+Use our [Manual Installation Guide](./installation/manual) for full control over your setup.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### 👥 Team Setup
+Setting up for your team? Check our [Team Installation Guide](./installation/team-setup).
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## What You'll Need
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Before installing, ensure you have:
+
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above
+- Git installed and configured
+- Your preferred AI coding tool (Claude Code / Cursor)
+- Terminal access for running installation scripts
+
+## Supported Tools
+
+CyberArk AI Spec OS works seamlessly with:
+
+- **Claude Code** - AI coding assistant with specialized agent support
+- **Cursor** - AI-powered code editor
+- **Any AI coding tool** (In Development) - Flexible integration architecture
+
+## Next Steps
+
+1. **Install** CyberArk AI Spec OS using our [installation guide](./installation/overview)
+2. **Configure** your standards and preferences
+3. **Set up** your first project with spec-driven development
+4. **Start building** with AI that understands your way
+
+## Getting Help
+
+- 📚 [Browse our documentation](./installation/overview)
+- 💬 [Join community discussions](https://github.com/ChenReuven/cyberark-ai-spec-os/discussions)
+- 🐛 [Report issues](https://github.com/ChenReuven/cyberark-ai-spec-os/issues)
+- 🌟 [Star us on GitHub](https://github.com/ChenReuven/cyberark-ai-spec-os)
