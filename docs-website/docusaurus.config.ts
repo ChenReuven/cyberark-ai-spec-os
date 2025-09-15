@@ -99,7 +99,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Cyberark AI Spec OS, Inc. Built By <a href="https://www.linkedin.com/in/%F0%9F%A4%96-chen-reuven-7535aa28/" target="_blank" rel="noopener noreferrer">@Chen Reuven</a> with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cyberark AI Spec OS, Inc. Built By <a href="https://www.linkedin.com/in/%F0%9F%A4%96-chen-reuven-7535aa28/" target="_blank" rel="noopener noreferrer">@Chen Reuven</a> And <a href="https://www.linkedin.com/in/nir-bar/" target="_blank" rel="noopener noreferrer">@Nir Bar</a> with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

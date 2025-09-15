@@ -75,7 +75,7 @@ export default function HomepageFeatures(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className={styles.featuresHeader}>
-          <h2 className={styles.featuresTitle}>Why Choose CyberArk AI Spec OS?</h2>
+          <h2 className={styles.featuresTitle}>Why Use CyberArk AI Spec OS?</h2>
           <p className={styles.featuresSubtitle}>
             Transform your development workflow with AI-powered tools that understand your needs
           </p>
