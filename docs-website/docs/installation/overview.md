@@ -4,27 +4,27 @@ sidebar_position: 1
 
 # Installation Overview
 
-CyberArk AI Spec OS has a flexible two-part installation system designed to work with both greenfield (new) and brownfield (existing) projects, seamlessly integrating with your current development workflow.
+CyberArk Agentic Spec Driven Development (CyberArk ASDD) has a flexible two-part installation system designed to work with both greenfield (new) and brownfield (existing) projects, seamlessly integrating with your current development workflow.
 
 ## Installation Architecture
 
 The installation consists of two main components:
 
 ### 1. Base Installation (Recommended)
-Install CyberArk AI Spec OS centrally on your system. This maintains your standards and instructions that projects will inherit from.
+Install CyberArk Agentic Spec Driven Development centrally on your system. This maintains your standards and instructions that projects will inherit from.
 
 **Location:** `~/.cyberark-spec-os` (or custom location)
 **Purpose:** Global standards, instructions, and project templates
 
 ### 2. Project Installation 
-Install CyberArk AI Spec OS into each project you work on. This provides self-contained setup with project-specific customizations.
+Install CyberArk Agentic Spec Driven Development into each project you work on. This provides self-contained setup with project-specific customizations.
 
 **Location:** Your project directory (`.cyberark-spec-os/`)
 **Purpose:** Project-specific configurations and specs
 
 ## Supported Tools
 
-CyberArk AI Spec OS works seamlessly with:
+CyberArk Agentic Spec Driven Development works seamlessly with:
 
 - **Claude Code** - AI coding assistant
 - **Cursor** - AI-powered code editor  
@@ -34,7 +34,7 @@ CyberArk AI Spec OS works seamlessly with:
 
 Works with any project setup:
 
-- **Greenfield Projects** - Start fresh with CyberArk AI Spec OS from day one
+- **Greenfield Projects** - Start fresh with CyberArk Agentic Spec Driven Development from day one
 - **Brownfield Projects** - Integrate into existing codebases without disruption
 - **Any Technology Stack** - Language and framework agnostic approach
 - **Any Project Size** - From small utilities to large enterprise applications

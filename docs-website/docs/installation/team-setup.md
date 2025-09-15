@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Team Installation
 
-Setting up CyberArk AI Spec OS for your entire team or organization? This guide covers team-wide deployment strategies and shared configuration management.
+Setting up CyberArk Agentic Spec Driven Development for your entire team or organization? This guide covers team-wide deployment strategies and shared configuration management.
 
 ## Team Installation Strategy
 
@@ -29,7 +29,7 @@ mkdir -p templates/project
 
 #### Populate Team Standards
 
-1. **Copy base standards** from CyberArk AI Spec OS
+1. **Copy base standards** from CyberArk Agentic Spec Driven Development
 2. **Customize** to match your team's preferences
 3. **Add organization-specific** guidelines
 4. **Version control** all changes
@@ -72,11 +72,11 @@ TEAM_REPO="https://github.com/your-org/team-cyberark-spec-os-standards.git"
 TEAM_STANDARDS_DIR="$HOME/.cyberark-spec-os-team"
 BASE_DIR="$HOME/.cyberark-spec-os"
 
-echo "Installing CyberArk AI Spec OS with team standards..."
+echo "Installing CyberArk Agentic Spec Driven Development with team standards..."
 
-# Install base CyberArk AI Spec OS first
+# Install base CyberArk Agentic Spec Driven Development first
 if [ ! -d "$BASE_DIR" ]; then
-    echo "Installing base CyberArk AI Spec OS..."
+    echo "Installing base CyberArk Agentic Spec Driven Development..."
     curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code --cursor
 fi
 

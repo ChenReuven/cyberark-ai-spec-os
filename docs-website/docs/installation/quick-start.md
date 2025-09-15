@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Quick Installation Guide
 
-Get up and running with CyberArk AI Spec OS in minutes. This guide covers the most common installation scenarios for both greenfield (new) and brownfield (existing) projects.
+Get up and running with CyberArk Agentic Spec Driven Development (CyberArk ASDD) in minutes. This guide covers the most common installation scenarios for both greenfield (new) and brownfield (existing) projects.
 
 ## Step 1: Base Installation
 
-The base installation sets up CyberArk AI Spec OS centrally on your system. This is optional but recommended, as it maintains your default standards and instructions that projects will inherit from.
+The base installation sets up CyberArk Agentic Spec Driven Development centrally on your system. This is optional but recommended, as it maintains your default standards and instructions that projects will inherit from.
 
 ### Choose Your Installation Method
 
@@ -40,7 +40,7 @@ You can choose a different location if needed by navigating to your preferred di
 
 ## Step 2: Project Installation
 
-After completing the base installation, you'll need to install CyberArk AI Spec OS into each project where you want to use it. This works seamlessly whether you're starting a new project (greenfield) or adding it to an existing codebase (brownfield).
+After completing the base installation, you'll need to install CyberArk Agentic Spec Driven Development into each project where you want to use it. This works seamlessly whether you're starting a new project (greenfield) or adding it to an existing codebase (brownfield).
 
 ### Navigate to Your Project
 

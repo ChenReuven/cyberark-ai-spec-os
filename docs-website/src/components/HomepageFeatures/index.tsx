@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         A system to make AI coding agents build your way, not their way. 
-        Agent OS transforms AI coding agents from confused interns into productive developers.
+        CyberArk Agentic Spec Driven Development transforms AI coding agents from confused interns into productive developers.
       </>
     ),
     icon: '⚙️',
@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         With structured workflows that capture your standards, your stack, and the unique 
-        details of your codebase, Agent OS gives your agents the specs they need to ship 
+        details of your codebase, CyberArk Agentic Spec Driven Development gives your agents the specs they need to ship 
         quality code on the first try—not the fifth.
       </>
     ),
@@ -75,7 +75,7 @@ export default function HomepageFeatures(): ReactNode {
     <section className={styles.features}>
       <div className="container">
         <div className={styles.featuresHeader}>
-          <h2 className={styles.featuresTitle}>Why Use CyberArk AI Spec OS?</h2>
+          <h2 className={styles.featuresTitle}>Why Use CyberArk Agentic Spec Driven Development?</h2>
           <p className={styles.featuresSubtitle}>
             Transform your development workflow with AI-powered tools that understand your needs
           </p>

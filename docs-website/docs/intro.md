@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Welcome to CyberArk AI Spec OS
+# Welcome to CyberArk Agentic Spec Driven Development
 
 Transform your AI coding agents from confused interns into productive developers with **Spec-Driven Development**.
 
-## What is CyberArk AI Spec OS?
+## What is CyberArk Agentic Spec Driven Development?
 
-CyberArk AI Spec OS is a system that makes AI coding agents build **your way, not their way**. It provides structured workflows that capture your standards, your stack, and the unique details of your codebase, giving your agents the specs they need to ship quality code on the first try—not the fifth.
+CyberArk Agentic Spec Driven Development is a system that makes AI coding agents build **your way, not their way**. It provides structured workflows that capture your standards, your stack, and the unique details of your codebase, giving your agents the specs they need to ship quality code on the first try—not the fifth.
 
 Works seamlessly with both **greenfield** (new) and **brownfield** (existing) projects, integrating into any development workflow without disruption.
 
@@ -20,7 +20,7 @@ Works seamlessly with both **greenfield** (new) and **brownfield** (existing) pr
 
 ## Three Layers of Context
 
-CyberArk AI Spec OS works by layering context—just like you'd onboard a human developer:
+CyberArk Agentic Spec Driven Development works by layering context—just like you'd onboard a human developer:
 
 ### 1. Your Standards
 - **Tech Stack** — Your frameworks, libraries, and tools
@@ -61,7 +61,7 @@ Before installing, ensure you have:
 
 ## Supported Tools
 
-CyberArk AI Spec OS works seamlessly with:
+CyberArk Agentic Spec Driven Development works seamlessly with:
 
 - **Claude Code** - AI coding assistant with specialized agent support
 - **Cursor** - AI-powered code editor
@@ -69,7 +69,7 @@ CyberArk AI Spec OS works seamlessly with:
 
 ## Next Steps
 
-1. **Install** CyberArk AI Spec OS using our [installation guide](./installation/overview)
+1. **Install** CyberArk Agentic Spec Driven Development using our [installation guide](./installation/overview)
 2. **Configure** your standards and preferences
 3. **Set up** your first project with spec-driven development
 4. **Start building** with AI that understands your way

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Installation Troubleshooting
 
-Having issues with your CyberArk AI Spec OS installation? This guide covers common problems and their solutions.
+Having issues with your CyberArk Agentic Spec Driven Development installation? This guide covers common problems and their solutions.
 
 ## Common Installation Issues
 
@@ -322,7 +322,7 @@ file ~/.cyberark-spec-os/claude-code/agents/context-fetcher.md
 
 ### Cursor Integration
 
-#### Problem: Cursor not using CyberArk AI Spec OS standards
+#### Problem: Cursor not using CyberArk Agentic Spec Driven Development standards
 
 **Check project configuration:**
 ```bash
@@ -347,7 +347,7 @@ Create a diagnostic script:
 #!/bin/bash
 # health-check.sh
 
-echo "🔍 CyberArk AI Spec OS Health Check"
+echo "🔍 CyberArk Agentic Spec Driven Development Health Check"
 echo "=================================="
 
 # Check base installation
@@ -452,7 +452,7 @@ uname -a
 echo "Shell: $SHELL"
 echo "Home: $HOME"
 
-# CyberArk AI Spec OS information
+# CyberArk Agentic Spec Driven Development information
 cat ~/.cyberark-spec-os/config.yml 2>/dev/null || echo "No config found"
 
 # Tool versions

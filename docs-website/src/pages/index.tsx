@@ -51,7 +51,7 @@ function HomepageHeader() {
                 </div>
                 <div className={styles.codeLine} style={{ textAlign: 'center' }}>
                   <span className={styles.codeOperator}><br /></span>
-                  <span className={styles.codeString}>'AI Spec OS'</span>
+                  <span className={styles.codeString}>'Agentic Spec Driven Development'</span>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function Home(): ReactNode {
             <div className={styles.ctaContent}>
               <h2 className={styles.ctaTitle}>Ready to revolutionize your development workflow?</h2>
               <p className={styles.ctaDescription}>
-                Join the future of AI-powered development with CyberArk AI Spec OS
+                Join the future of AI-powered development with CyberArk Agentic Spec Driven Development
               </p>
               <div className={styles.ctaButtons}>
                 <Link

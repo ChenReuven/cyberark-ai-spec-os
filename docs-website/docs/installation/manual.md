@@ -4,13 +4,13 @@ sidebar_position: 3
 
 # Manual Installation
 
-Prefer full control over your installation? Follow these step-by-step instructions to manually install CyberArk AI Spec OS. This approach works for both greenfield (new) and brownfield (existing) projects.
+Prefer full control over your installation? Follow these step-by-step instructions to manually install CyberArk Agentic Spec Driven Development. This approach works for both greenfield (new) and brownfield (existing) projects.
 
 ## Base Installation (Manual)
 
 ### Step 1: Create Directory Structure
 
-Create the main CyberArk AI Spec OS directories:
+Create the main CyberArk Agentic Spec Driven Development directories:
 
 ```bash
 mkdir -p ~/.cyberark-spec-os/standards/code-style
@@ -141,14 +141,14 @@ Create `~/.cyberark-spec-os/setup/project.sh`:
 cat > ~/.cyberark-spec-os/setup/project.sh << 'EOF'
 #!/bin/bash
 
-# CyberArk AI Spec OS Project Installation Script
+# CyberArk Agentic Spec Driven Development Project Installation Script
 
 set -e
 
 PROJECT_DIR="$(pwd)"
 BASE_DIR="$HOME/.cyberark-spec-os"
 
-echo "Installing CyberArk AI Spec OS into project: $PROJECT_DIR"
+echo "Installing CyberArk Agentic Spec Driven Development into project: $PROJECT_DIR"
 
 # Create project directory structure
 mkdir -p .cyberark-spec-os/product
@@ -214,7 +214,7 @@ installation_date: "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 base_installation: "$BASE_DIR"
 CONFIG
 
-echo "✅ CyberArk AI Spec OS installed successfully!"
+echo "✅ CyberArk Agentic Spec Driven Development installed successfully!"
 echo "📁 Project files created in .cyberark-spec-os/"
 echo "📚 Next: Review and customize your standards in .cyberark-spec-os/standards/"
 EOF
@@ -300,7 +300,7 @@ ls -la .cyberark-spec-os/standards/
 
 ## Updating Your Installation
 
-To update your manually installed CyberArk AI Spec OS:
+To update your manually installed CyberArk Agentic Spec Driven Development:
 
 ### Update Base Installation
 
