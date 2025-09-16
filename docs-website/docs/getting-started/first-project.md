@@ -195,5 +195,4 @@ After installation, your project will have this structure:
 
 ## Next Steps
 
-- [Learn core workflows](../workflows/overview)
 - [Explore best practices](../best-practices/overview)

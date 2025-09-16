@@ -333,4 +333,3 @@ After manual installation, you can customize:
 ## Next Steps
 
 - [Set up your first project](../getting-started/first-project)
-- [Learn the core workflows](../workflows/overview)

@@ -294,7 +294,7 @@ src/
 ### 2. Training and Documentation
 
 - **Internal documentation** for team-specific processes
-- **Training sessions** for new workflows
+- **Training sessions** for new processes
 - **Best practices sharing** sessions
 - **Regular review** and improvement cycles
 
@@ -349,7 +349,7 @@ Connect CyberArk AI Spec OS with your team's existing tools:
 
 - **Jira/Linear** integration for spec tracking
 - **Slack/Teams** notifications for spec updates
-- **GitHub/GitLab** templates and workflows
+- **GitHub/GitLab** templates and processes
 - **CI/CD** pipeline integration
 
 ## Troubleshooting Team Issues
