@@ -2,51 +2,180 @@
 sidebar_position: 1
 ---
 
-# Your First Project
+# Using CyberArk ASDD
 
-Learn how to set up CyberArk Agentic Spec Driven Development in your first project, whether it's a new project or an existing codebase.
+With CyberArk ASDD (CyberArk Agentic Spec Driven Development) installed, you're ready to supercharge your AI coding workflow.
 
-## Prerequisites
+At a high level, there are 3 phases that come into play when you're building with CyberArk ASDD:
 
-Before starting your first project, ensure you have:
+## 1. Define Your Standards
 
-- [Base installation completed](../installation/overview)
-- A project directory (new or existing)
-- Your preferred AI coding tool (Claude Code or Cursor)
+Using your base installation of CyberArk ASDD, you should customize your coding standards, style, best practices, and common tech stacks used on your projects.
 
-## Project Setup
+[More on defining standards](#defining-your-standards)
 
-### Step 1: Navigate to Your Project
+## 2. Initiate a Project
 
+After installing CyberArk ASDD in a project, use `/plan-product` (for a new product) or `/analyze-product` (for an existing codebase) to define the project's mission and roadmap.
+
+[More on planning your product](#starting-a-new-product)
+
+## 3. Plan & Build Features
+
+Feature development with CyberArk ASDD involves a repeating workflow which follows this sequence of commands:
+
+- `/create-spec` - Create the detailed spec for this feature
+- `/create-tasks` - Create a tasks list based on the feature spec
+- `/execute-tasks` - Proceed with implementation of 1 or several tasks
+
+[More on feature development](#plan--build-a-feature)
+
+## Defining Your Standards
+
+The main benefit of installing the base installation of CyberArk ASDD onto your system is it allows you to define your commonly used coding standards and best practices in one place. Then every time you run your project installer for CyberArk ASDD, it will copy those into your project (where you can customize them further, if you want).
+
+This is how your coding agent follows your best practices and coding style with every single task it executes.
+
+### Edit your tech stack
 ```bash
-cd /path/to/your/project
+~/.cyberark-spec-os/standards/tech-stack.md
 ```
 
-### Step 2: Run Project Installation
-
+### Edit your code style
 ```bash
-~/.cyberark-spec-os/setup/project.sh
+~/.cyberark-spec-os/standards/code-style.md
 ```
 
-This creates the project structure and copies necessary files.
-
-### Step 3: Verify Installation
-
-Check that the project structure was created:
-
+### Edit your best practices
 ```bash
-ls -la .cyberark-spec-os/
+~/.cyberark-spec-os/standards/best-practices.md
 ```
 
-You should see:
-- `product/` - Product documentation
-- `specs/` - Feature specifications
-- `standards/` - Project-specific standards
-- `config.yml` - Project configuration
+💡 **Pro tip**: Be opinionated! The more specific your standards, the more consistent your agent's output.
+
+## Starting a New Product
+
+First, install CyberArk ASDD into your project by following the [project installation instructions](../installation/overview).
+
+When beginning a new product, you can provide as much or as little detail as you want—though more detail leads to better results by using the `/plan-product` command.
+
+Installing CyberArk ASDD into an existing product that's midway through development? You'll want to use the `/analyze-product` command instead of the `/plan-product` command.
+
+```
+/plan-product
+
+I want to build a SaaS tool for tracking customer feedback
+Key features: feedback collection, sentiment analysis, reporting dashboard
+Target users: Product managers at B2B SaaS companies
+Tech stack: Use my defaults
+```
+
+**Note**: When starting a new product, feel free to provide as much or as little detail in your initial prompt. You can even invoke the `/plan-product` command with no other details and your agent will then prompt you for the specific details it needs to get started on your product's plan and roadmap.
+
+Once your agent has collected the basic details it needs, it will:
+
+✅ Create `.cyberark-spec-os/product/` structure  
+✅ Generate `mission.md` with product vision  
+✅ Create a 5-phase roadmap  
+✅ Set up your preferred tech stack  
+
+**Important**: Review and edit the generated documentation to ensure it accurately reflects your vision and goals.
+
+## Adding CyberArk ASDD to Existing Products
+
+Have an existing codebase? No problem. Use the `/analyze-product` command (instead of `/plan-product`) to install CyberArk ASDD into your existing codebase.
+
+```
+/analyze-product
+
+I want to install CyberArk ASDD in my existing codebase
+```
+
+Your agent will:
+
+🔍 Analyze your current code structure  
+📊 Detect your tech stack and patterns  
+📝 Create documentation reflecting what's already built  
+✅ Add completed features to "Phase 0" in the roadmap  
+
+**Important**: Review the generated documentation carefully—your agent's analysis might miss nuances or business context that only you know.
+
+## Plan & Build a Feature
+
+Feature development with CyberArk ASDD involves a sequence of these commands:
+
+- `/create-spec` - Create the detailed spec for this feature
+- `/create-tasks` - Create a tasks list based on the feature spec
+- `/execute-tasks` - Proceed with implementation of 1 or several tasks
+
+Let's break down each step:
+
+### Create a Spec
+
+```
+/create-spec
+
+Let's add user authentication with email/password and OAuth
+```
+
+This will kick off the spec creation process, where your agent will:
+
+📋 Create a Spec Requirements Document (SRD)  
+🔧 Write technical specifications  
+💾 Design database schemas (if needed)  
+🔌 Document API endpoints (if needed)  
+
+**Important**: This is the most critical review point! Carefully examine the SRD, specs, and especially the task breakdown. Adjust anything that doesn't match your expectations before proceeding.
+
+Specs live in: `.cyberark-spec-os/specs/2025-07-16-user-authentication/`
+
+Everything look good? You're ready to proceed to creating the tasks for this spec...
+
+### Create a Tasks List
+
+```
+/create-tasks
+
+Please create tasks for this spec
+```
+
+Your agent will:
+
+- Create a `tasks.md` file in your spec folder for this feature
+- Create a numbered checklist with parent tasks and sub-tasks
+- Follow a TDD (test-driven-development) approach when designing the task list and execution order
+
+**Again**: Give this tasks list a close review to ensure all the steps follow your spec, are in a logical order and everything looks as you'd expect.
+
+Ready to go? Proceed with the `/execute-tasks` command and specify which task(s) you want your agent to build.
+
+### Execute Tasks (Start Coding!)
+
+```
+/execute-tasks
+
+Please execute all of the tasks for this spec
+```
+
+Your agent will proceed with:
+
+- Implement every task, in order
+- Delegate to subagents for some steps (if using Claude Code)
+- Write and run tests
+- Mark tasks as completed
+- Update your product's roadmap if milestones have been completed
+- Document a recap of what was done and store this in `.cyberark-spec-os/recaps`
+- Commit to git
+
+**Note**: Under the hood, the `/execute-tasks` actually runs a series of several sub-processes (which you can inspect in your `/instructions` folder):
+
+- `/execute-tasks` - The main process you called
+- `/execute-task` - Runs this on a loop for the implementation of each individual task (and it's sub-tasks)
+- `/post-execution-tasks` - Finalizing, commiting to git, updating task list and roadmap, documenting the recap, delivering the final report to you
 
 ## Project Structure
 
-### Core Directories
+After installation, your project will have this structure:
 
 ```
 .cyberark-spec-os/
@@ -55,189 +184,14 @@ You should see:
 │   ├── roadmap.md     # Feature roadmap
 │   └── decisions.md   # Architectural decisions
 ├── specs/             # Feature specifications
-│   └── (empty)        # Add specs as you create them
+│   └── (created as you work)
 ├── standards/         # Project-specific standards
 │   ├── tech-stack.md  # Technology choices
 │   ├── code-style.md  # Coding standards
 │   └── best-practices.md
+├── recaps/            # Implementation summaries
 └── config.yml         # Project configuration
 ```
-
-### Product Documentation
-
-#### Mission Statement (`product/mission.md`)
-
-Define what you're building:
-
-```markdown
-# Product Mission
-
-## What We're Building
-A task management application that helps teams organize and track their work efficiently.
-
-## Target Users
-- Project managers
-- Development teams
-- Small to medium businesses
-
-## Success Criteria
-- 90% user satisfaction rating
-- 50% reduction in project delivery time
-- 1000+ active users within 6 months
-
-## Constraints
-- Must work on mobile devices
-- Budget: $50k development cost
-- Timeline: 6 months to MVP
-```
-
-#### Roadmap (`product/roadmap.md`)
-
-Plan your features:
-
-```markdown
-# Product Roadmap
-
-## Shipped Features
-- User authentication
-- Basic task creation
-- Project organization
-
-## In Progress
-- Real-time collaboration
-- Mobile app development
-
-## Planned
-- Advanced reporting
-- Integration with Slack
-- Custom workflows
-
-## Ideas / Backlog
-- AI-powered task suggestions
-- Time tracking
-- Advanced analytics
-```
-
-## Creating Your First Spec
-
-### Step 1: Define the Feature
-
-Create a new specification file:
-
-```bash
-touch .cyberark-spec-os/specs/user-authentication.md
-```
-
-### Step 2: Write the Specification
-
-```markdown
-# User Authentication Feature
-
-## Overview
-Implement secure user authentication for the task management application.
-
-## Requirements
-
-### Functional Requirements
-- Users can register with email and password
-- Users can log in with credentials
-- Users can reset forgotten passwords
-- Users can log out securely
-
-### Non-Functional Requirements
-- Password must be at least 8 characters
-- Account lockout after 5 failed attempts
-- Session expires after 24 hours of inactivity
-- All data transmission must be encrypted
-
-## Technical Implementation
-
-### Frontend
-- React components for login/register forms
-- Form validation using React Hook Form
-- State management with Redux Toolkit
-
-### Backend
-- Express.js API endpoints
-- JWT token authentication
-- bcrypt for password hashing
-- MongoDB for user storage
-
-### Security
-- HTTPS only
-- CORS configuration
-- Rate limiting on auth endpoints
-- Input sanitization
-
-## Acceptance Criteria
-- [ ] User can register with valid email
-- [ ] User can log in with correct credentials
-- [ ] User cannot log in with invalid credentials
-- [ ] Password reset email is sent
-- [ ] Session persists across browser refresh
-- [ ] User can log out and session is cleared
-
-## Testing Strategy
-- Unit tests for auth functions
-- Integration tests for API endpoints
-- E2E tests for user flows
-- Security testing for vulnerabilities
-```
-
-## Working with AI Assistants
-
-### Claude Code Integration
-
-1. **Set Context**: Reference your standards and specs
-2. **Provide Examples**: Show the AI your coding patterns
-3. **Iterate**: Review and refine AI suggestions
-4. **Validate**: Ensure code meets your standards
-
-### Cursor Integration
-
-1. **Use @-mentions**: Reference specific files or functions
-2. **Provide Context**: Share relevant documentation
-3. **Ask Specific Questions**: Be clear about requirements
-4. **Review Output**: Always validate AI-generated code
-
-## Best Practices
-
-### Specification Writing
-
-- **Be Specific**: Include concrete requirements
-- **Use Examples**: Show expected behavior
-- **Define Boundaries**: What's in scope vs. out of scope
-- **Include Tests**: Define how to verify success
-
-### AI Collaboration
-
-- **Start Small**: Begin with simple features
-- **Provide Context**: Share relevant standards and specs
-- **Review Everything**: Don't blindly accept AI suggestions
-- **Learn Patterns**: Understand what works for your team
-
-### Project Management
-
-- **Track Progress**: Update specs as you work
-- **Document Decisions**: Record architectural choices
-- **Version Control**: Commit changes regularly
-- **Review Regularly**: Weekly spec and code reviews
-
-## Common Pitfalls
-
-### Specification Issues
-
-- **Too Vague**: "Make it user-friendly" vs. "Button should be 44px tall"
-- **Missing Context**: Not explaining the business need
-- **No Examples**: Failing to show expected behavior
-- **Outdated**: Not updating specs as requirements change
-
-### AI Collaboration Issues
-
-- **No Context**: Not sharing relevant documentation
-- **Blind Acceptance**: Not reviewing AI suggestions
-- **Inconsistent Prompts**: Not following standard patterns
-- **No Validation**: Not testing AI-generated code
 
 ## Next Steps
 
