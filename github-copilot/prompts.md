@@ -4,9 +4,14 @@ This file contains example prompts and patterns for using GitHub Copilot effecti
 
 ## Product Planning Prompts
 
+### Analyzing Existing Codebase
+```
+@workspace help me analyze the product using @.github/copilot/analyze-product.md
+```
+
 ### Initial Product Planning
 ```
-Based on the Agent OS plan-product workflow in .agent-os/instructions/core/plan-product.md, help me create a comprehensive product plan for [PRODUCT_NAME]. Include:
+Based on the Agent OS plan-product workflow in @.github/copilot/plan-product.md, help me create a comprehensive product plan for [PRODUCT_NAME]. Include:
 
 1. Mission statement
 2. Target audience analysis
