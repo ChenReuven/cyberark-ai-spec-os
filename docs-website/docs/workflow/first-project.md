@@ -10,6 +10,51 @@ At a high level, there are 3 phases that come into play when you're building wit
 
 ## 1. Define Your Standards
 
+```mermaid
+graph TD
+A[🚀 Start] --> B{New or Existing Project?}
+
+B -->|New Project| C[📋 /plan-product]
+B -->|Existing Project| D[🔍 /analyze-product]
+
+C --> E[📝 Define Standards
+• Tech Stack
+• Code Style
+• Best Practices]
+D --> E
+
+E --> F[📊 Project Setup
+• Mission & Vision
+• Roadmap
+• Architecture]
+
+F --> G[🔄 Feature Development Loop]
+
+G --> H[📋 /create-spec
+Create detailed feature spec]
+H --> I[✅ Review Spec
+Adjust if needed]
+I --> J[📝 /create-tasks
+Generate task breakdown]
+J --> K[✅ Review Tasks
+Verify order & completeness]
+K --> L[⚡ /execute-tasks
+Implement & test]
+L --> M[📈 Update Roadmap
+Document recap]
+M --> N{More Features?}
+
+N -->|Yes| G
+N -->|No| O[🎉 Project Complete]
+
+style A fill:#e1f5fe
+style O fill:#c8e6c9
+style G fill:#fff3e0
+style H fill:#f3e5f5
+style J fill:#f3e5f5
+style L fill:#e8f5e8
+```
+
 Using your base installation of CyberArk ASDD, you should customize your coding standards, style, best practices, and common tech stacks used on your projects.
 
 [More on defining standards](#defining-your-standards)
@@ -108,6 +153,26 @@ Feature development with CyberArk ASDD involves a sequence of these commands:
 - `/create-tasks` - Create a tasks list based on the feature spec
 - `/execute-tasks` - Proceed with implementation of 1 or several tasks
 
+### Feature Development Flow
+
+```mermaid
+graph LR
+    A[💡 Feature Idea] --> B[📋 Create Spec]
+    B --> C[✅ Review Spec]
+    C --> D[📝 Create Tasks]
+    D --> E[✅ Review Tasks]
+    E --> F[⚡ Execute Tasks]
+    F --> G[🎉 Feature Complete]
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style D fill:#f3e5f5
+    style F fill:#e8f5e8
+    style G fill:#c8e6c9
+    style C fill:#fff9c4
+    style E fill:#fff9c4
+```
+
 Let's break down each step:
 
 ### Create a Spec
@@ -176,6 +241,36 @@ Your agent will proceed with:
 ## Project Structure
 
 After installation, your project will have this structure:
+
+```mermaid
+graph TD
+    A[📁 .cyberark-spec-os/] --> B[📁 product/]
+    A --> C[📁 specs/]
+    A --> D[📁 standards/]
+    A --> E[📁 recaps/]
+    A --> F[⚙️ config.yml]
+    
+    B --> B1[📄 mission.md]
+    B --> B2[📄 roadmap.md]
+    B --> B3[📄 decisions.md]
+    
+    C --> C1[📁 feature-folders/]
+    
+    D --> D1[📄 tech-stack.md]
+    D --> D2[📄 code-style.md]
+    D --> D3[📄 best-practices.md]
+    
+    E --> E1[📄 recap-files/]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+    style F fill:#f1f8e9
+```
+
+### File Structure Details
 
 ```
 .cyberark-spec-os/
