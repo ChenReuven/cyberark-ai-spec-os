@@ -64,7 +64,7 @@ const config: Config = {
       title: 'CyberArk Agentic Spec Driven Development',
       logo: {
         alt: 'CyberArk Agentic Spec Driven Development Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
