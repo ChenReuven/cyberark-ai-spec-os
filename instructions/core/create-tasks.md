@@ -65,6 +65,23 @@ Use the file-creator subagent to create file: tasks.md inside of the current fea
   - Build incrementally
 </ordering_principles>
 
+<understanding_verification>
+  EXECUTE: Understanding verification protocol from pre-flight.md
+  
+  CONTEXT: Current feature spec and generated task breakdown
+  FOCUS: Implementation approach and task structure
+  
+  VERIFICATION_AREAS:
+    - Spec requirements are fully understood
+    - Task breakdown covers all spec deliverables
+    - Implementation approach is technically sound
+    - Task dependencies and ordering are logical
+    - Testing strategy is comprehensive
+    - Success criteria for each task are clear
+  
+  REQUIREMENT: 100% clarity on implementation plan before presenting to user
+</understanding_verification>
+
 </step>
 
 <step number="2" name="execution_readiness">
