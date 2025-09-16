@@ -30,7 +30,8 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Workflow',
       items: [
-        'workflow/first-project'
+        'workflow/first-project',
+        'workflow/refining'
       ],
     },
     {
