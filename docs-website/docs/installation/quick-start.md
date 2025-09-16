@@ -135,15 +135,15 @@ source ~/.bashrc
 
 After successful installation:
 
-1. **Configure** your standards to match your preferences
-2. **Set up** your first project with CyberArk Agentic Spec Driven Development
-3. **Learn** the core development workflows
-4. **Explore** best practices for AI-assisted development
+1. **Configure** your [standards](../configuration/standards) to match your preferences
+2. **Set up** your first [project](../getting-started/first-project)
+3. **Learn** the core [workflows](../workflows/overview)
+4. **Explore** [best practices](../best-practices/overview)
 
 ## Getting Help
 
 If you encounter issues:
 
-- Check our [Troubleshooting Guide](./troubleshooting)
+- Check our [Troubleshooting Guide](../troubleshooting/common-issues)
 - Join our [Community Discussions](https://github.com/ChenReuven/cyberark-ai-spec-os/discussions)
 - Report bugs in our [Issue Tracker](https://github.com/ChenReuven/cyberark-ai-spec-os/issues)
