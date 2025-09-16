@@ -135,10 +135,9 @@ source ~/.bashrc
 
 After successful installation:
 
-1. **Configure** your [standards](../configuration/standards) to match your preferences
-2. **Set up** your first [project](../getting-started/first-project)
-3. **Learn** the core [workflows](../workflows/overview)
-4. **Explore** [best practices](../best-practices/overview)
+1. **Set up** your first [project](../getting-started/first-project)
+2. **Learn** the core [workflows](../workflows/overview)
+3. **Explore** [best practices](../best-practices/overview)
 
 ## Getting Help
 

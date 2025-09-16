@@ -239,5 +239,4 @@ CyberArk ASDD provides structured workflows that guide you through the entire de
 ## Next Steps
 
 - [Set up your first project](../getting-started/first-project)
-- [Configure your standards](../configuration/standards)
 - [Explore best practices](../best-practices/overview)

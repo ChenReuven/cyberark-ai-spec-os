@@ -197,4 +197,3 @@ After installation, your project will have this structure:
 
 - [Learn core workflows](../workflows/overview)
 - [Explore best practices](../best-practices/overview)
-- [Configure your standards](../configuration/standards)

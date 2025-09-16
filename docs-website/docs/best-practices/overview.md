@@ -492,4 +492,3 @@ The AI generated this code. Let me review it against our standards, test it thor
 
 - [Set up your first project](../getting-started/first-project)
 - [Learn core workflows](../workflows/overview)
-- [Configure your standards](../configuration/standards)

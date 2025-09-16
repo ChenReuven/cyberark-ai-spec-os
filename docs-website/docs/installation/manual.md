@@ -332,6 +332,5 @@ After manual installation, you can customize:
 
 ## Next Steps
 
-- [Configure your standards](../configuration/standards)
 - [Set up your first project](../getting-started/first-project)
 - [Learn the core workflows](../workflows/overview)
