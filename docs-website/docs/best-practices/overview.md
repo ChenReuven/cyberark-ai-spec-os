@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Best Practices
+# Do And Don׳t
 
 Learn proven strategies and techniques for getting the most out of CyberArk Agentic Spec Driven Development.
 

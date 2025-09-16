@@ -37,7 +37,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Best Practices',
       items: [
-        'best-practices/overview'
+        {
+          type: 'doc',
+          id: 'best-practices/overview',
+          label: 'Do And Don\'t'
+        }
       ],
     },
     {
