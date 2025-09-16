@@ -27,6 +27,8 @@ Docs, installation, useage, & best practices 👉 [It's all here](https://ChenRe
 ### Created by Chen Reuven
 
 
-curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code --cursor
+curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code --cursor --github-copilot
 
-~/.cyberark-spec-os/setup/project.sh
+~/.cyberark-spec-os/setup/project.sh --github-copilot --project-type=python
+
+

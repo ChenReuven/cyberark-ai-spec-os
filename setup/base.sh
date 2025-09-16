@@ -11,6 +11,7 @@ OVERWRITE_STANDARDS=false
 OVERWRITE_CONFIG=false
 CLAUDE_CODE=false
 CURSOR=false
+GITHUB_COPILOT=false
 
 # Base URL for raw GitHub content
 BASE_URL="https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master"
@@ -38,6 +39,10 @@ while [[ $# -gt 0 ]]; do
             CURSOR=true
             shift
             ;;
+        --github-copilot|--copilot)
+            GITHUB_COPILOT=true
+            shift
+            ;;
         -h|--help)
             echo "Usage: $0 [OPTIONS]"
             echo ""
@@ -47,6 +52,7 @@ while [[ $# -gt 0 ]]; do
             echo "  --overwrite-config          Overwrite existing config.yml"
             echo "  --claude-code               Add Claude Code support"
             echo "  --cursor                    Add Cursor support"
+            echo "  --github-copilot            Add GitHub Copilot support"
             echo "  -h, --help                  Show this help message"
             echo ""
             exit 0
@@ -137,6 +143,28 @@ if [ "$CURSOR" = true ]; then
     fi
 fi
 
+# Handle GitHub Copilot installation
+if [ "$GITHUB_COPILOT" = true ]; then
+    echo ""
+    echo "📥 Downloading GitHub Copilot support files..."
+    mkdir -p "$INSTALL_DIR/github-copilot"
+
+    # Download GitHub Copilot files
+    echo "  📂 GitHub Copilot templates:"
+    for file in prompts README workspace-setup; do
+        download_file "${BASE_URL}/github-copilot/${file}.md" \
+            "$INSTALL_DIR/github-copilot/${file}.md" \
+            "false" \
+            "github-copilot/${file}.md"
+    done
+
+    # Update config to enable github_copilot
+    if [ -f "$INSTALL_DIR/config.yml" ]; then
+        sed -i.bak '/github_copilot:/,/enabled:/ s/enabled: false/enabled: true/' "$INSTALL_DIR/config.yml" && rm "$INSTALL_DIR/config.yml.bak"
+        echo "  ✓ GitHub Copilot enabled in configuration"
+    fi
+fi
+
 # Success message
 echo ""
 echo "✅ Agent OS base installation has been completed."
@@ -162,6 +190,10 @@ echo "   $INSTALL_DIR/setup/project.sh   - Project installation script"
 
 if [ "$CLAUDE_CODE" = true ]; then
     echo "   $INSTALL_DIR/claude-code/agents/ - Claude Code agent templates"
+fi
+
+if [ "$GITHUB_COPILOT" = true ]; then
+    echo "   $INSTALL_DIR/github-copilot/   - GitHub Copilot support files"
 fi
 
 echo ""

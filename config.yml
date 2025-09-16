@@ -18,12 +18,13 @@ project_types:
     instructions: ~/.cyberark-spec-os/instructions
     standards: ~/.cyberark-spec-os/standards
 
-  # type_a:
-  #   instructions: ~/.cyberark-spec-os/project_types/type_a/instructions
-  #   standards: ~/.cyberark-spec-os/project_types/type_a/standards
+  python:
+    instructions: ~/.agent-os/instructions
+    standards: ~/.agent-os/project_types/python/standards
 
-  # type_b:
-  #   instructions: ~/.cyberark-spec-os/project_types/type_b/instructions
-  #   standards: ~/.cyberark-spec-os/project_types/type_b/standards
+  golang:
+    instructions: ~/.agent-os/instructions
+    standards: ~/.agent-os/project_types/golang/standards
+
 
 default_project_type: default
