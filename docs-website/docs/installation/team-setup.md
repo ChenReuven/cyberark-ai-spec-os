@@ -77,7 +77,7 @@ echo "Installing CyberArk Agentic Spec Driven Development with team standards...
 # Install base CyberArk Agentic Spec Driven Development first
 if [ ! -d "$BASE_DIR" ]; then
     echo "Installing base CyberArk Agentic Spec Driven Development..."
-    curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code --cursor
+    curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code --cursor
 fi
 
 # Clone team standards

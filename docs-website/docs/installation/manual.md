@@ -10,7 +10,7 @@ Prefer full control over your installation? Follow these step-by-step instructio
 
 ### Step 1: Create Directory Structure
 
-Create the main CyberArk Agentic Spec Driven Development directories:
+Create the master CyberArk Agentic Spec Driven Development directories:
 
 ```bash
 mkdir -p ~/.cyberark-spec-os/standards/code-style
@@ -34,21 +34,21 @@ Create `~/.cyberark-spec-os/standards/tech-stack.md`:
 
 ```bash
 curl -o ~/.cyberark-spec-os/standards/tech-stack.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/standards/tech-stack.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/standards/tech-stack.md
 ```
 
 Create `~/.cyberark-spec-os/standards/code-style.md`:
 
 ```bash
 curl -o ~/.cyberark-spec-os/standards/code-style.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/standards/code-style.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/standards/code-style.md
 ```
 
 Create `~/.cyberark-spec-os/standards/best-practices.md`:
 
 ```bash
 curl -o ~/.cyberark-spec-os/standards/best-practices.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/standards/best-practices.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/standards/best-practices.md
 ```
 
 #### Language-Specific Style Guides
@@ -58,15 +58,15 @@ Download to `~/.cyberark-spec-os/standards/code-style/`:
 ```bash
 # HTML style guide
 curl -o ~/.cyberark-spec-os/standards/code-style/html-style.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/standards/code-style/html-style.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/standards/code-style/html-style.md
 
 # CSS style guide  
 curl -o ~/.cyberark-spec-os/standards/code-style/css-style.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/standards/code-style/css-style.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/standards/code-style/css-style.md
 
 # JavaScript style guide
 curl -o ~/.cyberark-spec-os/standards/code-style/javascript-style.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/standards/code-style/javascript-style.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/standards/code-style/javascript-style.md
 ```
 
 ### Step 3: Download Instructions Files
@@ -78,45 +78,45 @@ Copy the instruction files to `~/.cyberark-spec-os/instructions/`:
 ```bash
 # Core workflow instructions
 curl -o ~/.cyberark-spec-os/instructions/core/plan-product.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/core/plan-product.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/core/plan-product.md
 
 curl -o ~/.cyberark-spec-os/instructions/core/create-spec.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/core/create-spec.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/core/create-spec.md
 
 curl -o ~/.cyberark-spec-os/instructions/core/execute-tasks.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/core/execute-tasks.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/core/execute-tasks.md
 
 curl -o ~/.cyberark-spec-os/instructions/core/execute-task.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/core/execute-task.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/core/execute-task.md
 
 curl -o ~/.cyberark-spec-os/instructions/core/analyze-product.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/core/analyze-product.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/core/analyze-product.md
 ```
 
 #### Meta Instructions
 
 ```bash
 curl -o ~/.cyberark-spec-os/instructions/meta/pre-flight.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/meta/pre-flight.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/meta/pre-flight.md
 
 curl -o ~/.cyberark-spec-os/instructions/meta/post-flight.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/instructions/meta/post-flight.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/instructions/meta/post-flight.md
 ```
 
 ### Step 4: Download Commands
 
 ```bash
 curl -o ~/.cyberark-spec-os/commands/analyze-product.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/commands/analyze-product.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/commands/analyze-product.md
 
 curl -o ~/.cyberark-spec-os/commands/create-spec.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/commands/create-spec.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/commands/create-spec.md
 
 curl -o ~/.cyberark-spec-os/commands/execute-tasks.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/commands/execute-tasks.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/commands/execute-tasks.md
 
 curl -o ~/.cyberark-spec-os/commands/plan-product.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/commands/plan-product.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/commands/plan-product.md
 ```
 
 ### Step 5: Create Configuration
@@ -262,19 +262,19 @@ mkdir -p ~/.cyberark-spec-os/claude-code/agents
 
 # Download agent configurations
 curl -o ~/.cyberark-spec-os/claude-code/agents/context-fetcher.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/claude-code/agents/context-fetcher.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/claude-code/agents/context-fetcher.md
 
 curl -o ~/.cyberark-spec-os/claude-code/agents/date-checker.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/claude-code/agents/date-checker.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/claude-code/agents/date-checker.md
 
 curl -o ~/.cyberark-spec-os/claude-code/agents/file-creator.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/claude-code/agents/file-creator.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/claude-code/agents/file-creator.md
 
 curl -o ~/.cyberark-spec-os/claude-code/agents/git-workflow.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/claude-code/agents/git-workflow.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/claude-code/agents/git-workflow.md
 
 curl -o ~/.cyberark-spec-os/claude-code/agents/test-runner.md \
-  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/claude-code/agents/test-runner.md
+  https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/claude-code/agents/test-runner.md
 ```
 
 ### For Cursor Users

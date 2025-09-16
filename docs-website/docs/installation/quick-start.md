@@ -8,7 +8,7 @@ Get up and running with CyberArk Agentic Spec Driven Development (CyberArk ASDD)
 
 ## Step 1: Base Installation
 
-The base installation sets up CyberArk Agentic Spec Driven Development centrally on your system. This is optional but recommended, as it maintains your default standards and instructions that projects will inherit from.
+The base installation sets up CyberArk Agentic Spec Driven Development centrally on your system. This is optional but recommended, as it mastertains your default standards and instructions that projects will inherit from.
 
 ### Choose Your Installation Method
 
@@ -17,19 +17,19 @@ Select the installation command based on which AI coding tools you use:
 #### For Claude Code Users
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code
+curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code
 ```
 
 #### For Cursor Users
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --cursor
+curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --cursor
 ```
 
 #### For Both Claude Code & Cursor
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code --cursor
+curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code --cursor
 ```
 
 ### Installation Location

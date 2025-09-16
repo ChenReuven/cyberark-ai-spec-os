@@ -14,12 +14,14 @@ The installation consists of two main components:
 Install CyberArk Agentic Spec Driven Development centrally on your system. This maintains your standards and instructions that projects will inherit from.
 
 **Location:** `~/.cyberark-spec-os` (or custom location)
+
 **Purpose:** Global standards, instructions, and project templates
 
 ### 2. Project Installation 
 Install CyberArk Agentic Spec Driven Development into each project you work on. This provides self-contained setup with project-specific customizations.
 
 **Location:** Your project directory (`.cyberark-spec-os/`)
+
 **Purpose:** Project-specific configurations and specs
 
 ## Supported Tools

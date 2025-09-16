@@ -22,6 +22,30 @@ Works seamlessly with both **greenfield** (new) and **brownfield** (existing) pr
 
 CyberArk Agentic Spec Driven Development works by layering context—just like you'd onboard a human developer:
 
+```mermaid
+graph TD
+    A[CyberArk Agentic Spec Driven Development] --> B[Layer 1: Your Standards]
+    A --> C[Layer 2: Your Product]
+    A --> D[Layer 3: Your Specs]
+    
+    B --> B1[Tech Stack<br/>Frameworks, libraries, tools]
+    B --> B2[Code Style<br/>Formatting rules, conventions]
+    B --> B3[Best Practices<br/>Development philosophy]
+    
+    C --> C1[Mission<br/>What you're building and why]
+    C --> C2[Roadmap<br/>Features shipped, in progress, planned]
+    C --> C3[Decisions<br/>Key architectural choices]
+    
+    D --> D1[Requirements<br/>Goals and user stories]
+    D --> D2[Technical Specs<br/>API design, database changes]
+    D --> D3[Task Breakdown<br/>Step-by-step implementation]
+    
+    style A fill:#667eea,stroke:#333,stroke-width:3px,color:#fff
+    style B fill:#f093fb,stroke:#333,stroke-width:2px,color:#fff
+    style C fill:#4facfe,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
+```
+
 ### 1. Your Standards
 - **Tech Stack** — Your frameworks, libraries, and tools
 - **Code Style** — Your formatting rules and conventions

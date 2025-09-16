@@ -483,7 +483,7 @@ rm -rf ~/.cyberark-spec-os/
 rm -rf ~/.cache/cyberark-spec-os/ 2>/dev/null || true
 
 # 4. Reinstall base
-curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/main/setup/base.sh | bash -s -- --claude-code --cursor
+curl -sSL https://raw.githubusercontent.com/ChenReuven/cyberark-ai-spec-os/master/setup/base.sh | bash -s -- --claude-code --cursor
 
 # 5. Restore customizations
 cp -r ~/.cyberark-spec-os-backup/* ~/.cyberark-spec-os/standards/ 2>/dev/null || true
