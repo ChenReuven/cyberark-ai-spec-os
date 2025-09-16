@@ -135,7 +135,7 @@ source ~/.bashrc
 
 After successful installation:
 
-1. **Set up** your first [project](../getting-started/first-project)
+1. **Set up** your first [project](../workflow/first-project)
 2. **Learn** the [best practices](../best-practices/overview)
 
 ## Getting Help
