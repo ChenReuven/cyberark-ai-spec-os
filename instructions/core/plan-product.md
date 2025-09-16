@@ -230,6 +230,21 @@ Use the file-creator subagent to create the file: .cyberark-spec-os/product/tech
   You can respond with the technology choice or "n/a" for each item.
 </missing_items_template>
 
+<understanding_verification>
+  EXECUTE: Understanding verification protocol from pre-flight.md
+  
+  CONTEXT: Product concept and technical requirements gathered
+  FOCUS: Product planning and documentation requirements
+  
+  VERIFICATION_AREAS:
+    - Product vision and purpose is clear
+    - Target users and use cases are understood
+    - Key features are well-defined
+    - Technical stack requirements are clear
+    - Success criteria and goals are established
+  
+  REQUIREMENT: 100% clarity on product concept before creating planning documents
+</understanding_verification>
 
 </step>
 

@@ -70,6 +70,22 @@ Use the context-fetcher subagent to gather minimal context for task understandin
   </conditional_docs>
 </context_gathering>
 
+<understanding_verification>
+  EXECUTE: Understanding verification protocol from pre-flight.md
+  
+  CONTEXT: Current spec and assigned tasks
+  FOCUS: Implementation requirements and success criteria
+  
+  VERIFICATION_AREAS:
+    - Task objectives are crystal clear
+    - Success criteria are measurable  
+    - Technical approach is understood
+    - Dependencies are identified
+    - Scope boundaries are established
+  
+  REQUIREMENT: 100% understanding before proceeding to git workflow
+</understanding_verification>
+
 </step>
 
 <step number="3" subagent="git-workflow" name="git_branch_management">

@@ -41,6 +41,22 @@ Read and analyze the given parent task and all its sub-tasks from tasks.md to ga
   NOTE: Test requirements for each sub-task
 </instructions>
 
+<understanding_verification>
+  EXECUTE: Understanding verification protocol from pre-flight.md
+  
+  CONTEXT: Current parent task and all subtasks
+  FOCUS: Specific implementation requirements for this task
+  
+  VERIFICATION_SCOPE:
+    - Parent task objective is crystal clear
+    - Each subtask purpose is understood
+    - Testing approach is defined
+    - Integration requirements are known
+    - Success criteria are measurable
+  
+  REQUIREMENT: 100% clarity on what to build before proceeding
+</understanding_verification>
+
 </step>
 
 <step number="2" name="technical_spec_review">
