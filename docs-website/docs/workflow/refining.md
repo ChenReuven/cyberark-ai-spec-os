@@ -259,23 +259,8 @@ Watch for these red flags:
 
 Refinement happens at every stage of your ASDD workflow:
 
-```mermaid
-graph LR
-    A[/plan-product] --> B[/create-spec]
-    B --> C[/execute-tasks]
-    C --> D[Reflect & Refine]
-    D --> A
-    
-    A -.-> A1[Review mission.md<br/>Update tech-stack.md]
-    B -.-> B1[Apply refined standards<br/>Use improved patterns]
-    C -.-> C1[Implement with standards<br/>Note what works/fails]
-    D -.-> D1[Update standards<br/>Document in recaps]
-    
-    style A fill:#4facfe,stroke:#333,stroke-width:2px,color:#fff
-    style B fill:#f093fb,stroke:#333,stroke-width:2px,color:#fff
-    style C fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
-    style D fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
-```
+
+<img src="/img/refinment-workflow-2.svg" alt="CyberArk ASDD Workflow" width="600" height="auto" style={{maxWidth: '100%', height: 'auto'}} />
 
 ### During `/plan-product`
 - **Review `mission.md`** based on user feedback and market insights
