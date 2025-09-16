@@ -8,14 +8,14 @@ Transform your AI coding agents from confused interns into productive developers
 
 ## What is CyberArk Agentic Spec Driven Development?
 
-CyberArk Agentic Spec Driven Development is a system that makes AI coding agents build **your way, not their way**. It provides structured workflows that capture your standards, your stack, and the unique details of your codebase, giving your agents the specs they need to ship quality code on the first try—not the fifth.
+CyberArk Agentic Spec Driven Development is a system that makes AI coding agents build **your way, not their way**. It provides structured processes that capture your standards, your stack, and the unique details of your codebase, giving your agents the specs they need to ship quality code on the first try—not the fifth.
 
 Works seamlessly with both **greenfield** (new) and **brownfield** (existing) projects, integrating into any development workflow without disruption.
 
 ### Key Benefits
 
 - 🎯 **Complete Context** - Your standards, product vision, and detailed specs working together
-- 🔄 **Structured Development** - Proven workflows that replace random prompting with systematic development
+- 🔄 **Structured Development** - Proven processes that replace random prompting with systematic development
 - ⚙️ **Your Standards** - Completely customizable to match how your team operates
 
 ## Three Layers of Context

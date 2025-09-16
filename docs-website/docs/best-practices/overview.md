@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Best Practices
+# Do And Don׳t
 
 Learn proven strategies and techniques for getting the most out of CyberArk Agentic Spec Driven Development.
 
@@ -490,6 +490,4 @@ The AI generated this code. Let me review it against our standards, test it thor
 
 ## Next Steps
 
-- [Set up your first project](../getting-started/first-project)
-- [Learn core workflows](../workflows/overview)
-- [Configure your standards](../configuration/standards)
+- [Set up your first project](../workflow/first-project)

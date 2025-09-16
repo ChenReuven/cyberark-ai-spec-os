@@ -363,6 +363,7 @@ html {
   border-radius: 8px;
   transition: all 0.3s ease;
   font-weight: 500;
+  color: var(--ifm-menu-color);
 }
 
 .menu__link:hover {
@@ -378,6 +379,19 @@ html {
 
 .menu__list-item-collapsible > .menu__link {
   font-weight: 600;
+  color: var(--ifm-menu-color);
+}
+
+.menu__list-item-collapsible > .menu__link:hover {
+  color: var(--ifm-menu-color-active);
+}
+
+.menu__caret {
+  color: var(--ifm-menu-color);
+}
+
+.menu__caret:hover {
+  color: var(--ifm-menu-color-active);
 }
 
 /* Enhanced pagination nav */

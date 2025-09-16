@@ -489,6 +489,5 @@ bash: ~/.cyberark-spec-os/setup/project.sh: No such file or directory
 
 ## Next Steps
 
-- [Set up your first project](../getting-started/first-project)
-- [Learn core workflows](../workflows/overview)
+- [Set up your first project](../workflow/first-project)
 - [Explore best practices](../best-practices/overview)
