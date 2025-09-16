@@ -8,52 +8,12 @@ With CyberArk ASDD (CyberArk Agentic Spec Driven Development) installed, you're 
 
 At a high level, there are 3 phases that come into play when you're building with CyberArk ASDD:
 
+## General Workflow
+
+<img src="/img/workflow-1.svg" alt="CyberArk ASDD Workflow" width="600" height="auto" style={{maxWidth: '100%', height: 'auto'}} />
+
+
 ## 1. Define Your Standards
-
-```mermaid
-graph TD
-A[🚀 Start] --> B{New or Existing Project?}
-
-B -->|New Project| C[📋 /plan-product]
-B -->|Existing Project| D[🔍 /analyze-product]
-
-C --> E[📝 Define Standards
-• Tech Stack
-• Code Style
-• Best Practices]
-D --> E
-
-E --> F[📊 Project Setup
-• Mission & Vision
-• Roadmap
-• Architecture]
-
-F --> G[🔄 Feature Development Loop]
-
-G --> H[📋 /create-spec
-Create detailed feature spec]
-H --> I[✅ Review Spec
-Adjust if needed]
-I --> J[📝 /create-tasks
-Generate task breakdown]
-J --> K[✅ Review Tasks
-Verify order & completeness]
-K --> L[⚡ /execute-tasks
-Implement & test]
-L --> M[📈 Update Roadmap
-Document recap]
-M --> N{More Features?}
-
-N -->|Yes| G
-N -->|No| O[🎉 Project Complete]
-
-style A fill:#e1f5fe
-style O fill:#c8e6c9
-style G fill:#fff3e0
-style H fill:#f3e5f5
-style J fill:#f3e5f5
-style L fill:#e8f5e8
-```
 
 Using your base installation of CyberArk ASDD, you should customize your coding standards, style, best practices, and common tech stacks used on your projects.
 
