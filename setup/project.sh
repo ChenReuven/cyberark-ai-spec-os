@@ -11,6 +11,7 @@ OVERWRITE_INSTRUCTIONS=false
 OVERWRITE_STANDARDS=false
 CLAUDE_CODE=false
 CURSOR=false
+GITHUB_COPILOT=false
 PROJECT_TYPE=""
 
 # Parse command line arguments
@@ -36,6 +37,10 @@ while [[ $# -gt 0 ]]; do
             CURSOR=true
             shift
             ;;
+        --github-copilot|--copilot)
+            GITHUB_COPILOT=true
+            shift
+            ;;
         --project-type=*)
             PROJECT_TYPE="${1#*=}"
             shift
@@ -49,6 +54,7 @@ while [[ $# -gt 0 ]]; do
             echo "  --overwrite-standards       Overwrite existing standards files"
             echo "  --claude-code               Add Claude Code support"
             echo "  --cursor                    Add Cursor support"
+            echo "  --github-copilot            Add GitHub Copilot support"
             echo "  --project-type=TYPE         Use specific project type for installation"
             echo "  -h, --help                  Show this help message"
             echo ""
@@ -119,6 +125,16 @@ if [ "$IS_FROM_BASE" = true ]; then
            grep -A1 "cursor:" "$BASE_AGENT_OS/config.yml" | grep -q "enabled: true"; then
             CURSOR=true
             echo "  ✓ Auto-enabling Cursor support (from Agent OS config)"
+        fi
+    fi
+
+
+    if [ "$GITHUB_COPILOT" = false ]; then
+        # Check if github_copilot is enabled in base config
+        if grep -q "github_copilot:" "$BASE_AGENT_OS/config.yml" && \
+           grep -A1 "github_copilot:" "$BASE_AGENT_OS/config.yml" | grep -q "enabled: true"; then
+            GITHUB_COPILOT=true
+            echo "  ✓ Auto-enabling GitHub Copilot support (from Agent OS config)"
         fi
     fi
 
@@ -268,6 +284,38 @@ if [ "$CURSOR" = true ]; then
     fi
 fi
 
+
+# Handle GitHub Copilot installation for project
+if [ "$GITHUB_COPILOT" = true ]; then
+    echo ""
+    echo "📥 Installing GitHub Copilot support..."
+    mkdir -p "./.github/copilot"
+
+    echo "  📂 Instructions:"
+
+    if [ "$IS_FROM_BASE" = true ]; then
+        # Create GitHub Copilot compatible instruction files from base installation
+        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product; do
+            if [ -f "$BASE_AGENT_OS/commands/${cmd}.md" ]; then
+                convert_to_copilot_instruction "$BASE_AGENT_OS/commands/${cmd}.md" "./.github/copilot/${cmd}.md"
+            else
+                echo "  ⚠️  Warning: ${cmd}.md not found in base installation"
+            fi
+        done
+    else
+        # Download from GitHub and convert when using --no-base
+        echo "  Downloading and converting from GitHub..."
+        for cmd in plan-product create-spec create-tasks execute-tasks analyze-product; do
+            TEMP_FILE="/tmp/${cmd}.md"
+            curl -s -o "$TEMP_FILE" "${BASE_URL}/commands/${cmd}.md"
+            if [ -f "$TEMP_FILE" ]; then
+                convert_to_copilot_instruction "$TEMP_FILE" "./.github/copilot/${cmd}.md"
+                rm "$TEMP_FILE"
+            fi
+        done
+    fi
+fi
+
 # Success message
 echo ""
 echo "✅ Agent OS has been installed in your project ($PROJECT_NAME)!"
@@ -283,6 +331,11 @@ fi
 
 if [ "$CURSOR" = true ]; then
     echo "   .cursor/rules/             - Cursor command rules"
+fi
+
+
+if [ "$GITHUB_COPILOT" = true ]; then
+    echo "   .github/copilot/           - GitHub Copilot instructions"
 fi
 
 echo ""
@@ -306,6 +359,14 @@ if [ "$CURSOR" = true ]; then
     echo "  @analyze-product - Set up the mission and roadmap for an existing product"
     echo "  @create-spec     - Create a spec for a new feature"
     echo "  @execute-tasks   - Build and ship code for a new feature"
+    echo ""
+fi
+
+if [ "$GITHUB_COPILOT" = true ]; then
+    echo "GitHub Copilot usage:"
+    echo "  Reference .github/copilot/ files in your prompts for structured workflows"
+    echo "  Use the Agent OS instructions and standards for consistent development patterns"
+    echo "  Leverage the installed templates for product planning and feature development"
     echo ""
 fi
 

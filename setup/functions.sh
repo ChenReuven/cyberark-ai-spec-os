@@ -185,3 +185,32 @@ install_from_github() {
         done
     fi
 }
+
+
+# Function to convert command file to GitHub Copilot instruction format
+convert_to_copilot_instruction() {
+    local source="$1"
+    local dest="$2"
+
+    if [ -f "$dest" ]; then
+        echo "  ⚠️  $(basename $dest) already exists - skipping"
+    else
+        # Create GitHub Copilot compatible instruction file
+        cat > "$dest" << 'EOF'
+# GitHub Copilot Instruction
+
+This instruction file provides context for GitHub Copilot to understand Agent OS workflows and patterns.
+
+## Usage
+Reference this file in your prompts to GitHub Copilot for structured development workflows that follow Agent OS patterns.
+
+## Original Command Content
+
+EOF
+        # Append the original content
+        cat "$source" >> "$dest"
+        echo "  ✓ $(basename $dest)"
+    fi
+}
+
+
