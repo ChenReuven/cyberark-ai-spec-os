@@ -66,13 +66,13 @@ graph TD
 Ready to get started? Choose your path:
 
 ### 🚀 Fast Setup (Recommended)
-Follow our [Quick Installation Guide](./installation/quick-start) for the fastest way to get up and running.
+Follow our [Quick Installation Guide](/docs/installation/quick-start) for the fastest way to get up and running.
 
 ### ⚙️ Custom Installation
-Use our [Manual Installation Guide](./installation/manual) for full control over your setup.
+Use our [Manual Installation Guide](/docs/installation/manual) for full control over your setup.
 
 ### 👥 Team Setup
-Setting up for your team? Check our [Team Installation Guide](./installation/team-setup).
+Setting up for your team? Check our [Team Installation Guide](/docs/installation/team-setup).
 
 ## What You'll Need
 
@@ -93,14 +93,14 @@ CyberArk Agentic Spec Driven Development works seamlessly with:
 
 ## Next Steps
 
-1. **Install** CyberArk Agentic Spec Driven Development using our [installation guide](./installation/overview)
+1. **Install** CyberArk Agentic Spec Driven Development using our [installation guide](/docs/installation/overview)
 2. **Configure** your standards and preferences
 3. **Set up** your first project with spec-driven development
 4. **Start building** with AI that understands your way
 
 ## Getting Help
 
-- 📚 [Browse our documentation](./installation/overview)
+- 📚 [Browse our documentation](/docs/installation/overview)
 - 💬 [Join community discussions](https://github.com/ChenReuven/cyberark-ai-spec-os/discussions)
 - 🐛 [Report issues](https://github.com/ChenReuven/cyberark-ai-spec-os/issues)
 - 🌟 [Star us on GitHub](https://github.com/ChenReuven/cyberark-ai-spec-os)
