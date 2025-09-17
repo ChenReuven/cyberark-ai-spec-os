@@ -15,17 +15,17 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://cyberark-ai-spec-os.github.io',
+  url: 'https://chenreuven.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/cyberark-ai-spec-os/',
   
   // Add trailing slash configuration for GitHub Pages
   trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cyberark-ai-spec-os', // Usually your GitHub org/user name.
+  organizationName: 'ChenReuven', // Usually your GitHub org/user name.
   projectName: 'cyberark-ai-spec-os', // Usually your repo name.
 
   onBrokenLinks: 'warn',
@@ -48,7 +48,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ChenReuven/cyberark-ai-spec-os/tree/master/docs-website/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -97,7 +97,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/cyberark-ai-spec-os',
+              href: 'https://github.com/ChenReuven/cyberark-ai-spec-os',
             },
           ],
         },
