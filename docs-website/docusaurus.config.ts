@@ -25,7 +25,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cyberark-ai-spec-os', // Usually your GitHub org/user name.
+  organizationName: 'ChenReuven', // Usually your GitHub org/user name.
   projectName: 'cyberark-ai-spec-os', // Usually your repo name.
 
   onBrokenLinks: 'warn',
