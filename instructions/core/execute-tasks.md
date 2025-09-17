@@ -70,21 +70,13 @@ Use the context-fetcher subagent to gather minimal context for task understandin
   </conditional_docs>
 </context_gathering>
 
-<understanding_verification>
-  EXECUTE: Understanding verification protocol from pre-flight.md
-  
-  CONTEXT: Current spec and assigned tasks
-  FOCUS: Implementation requirements and success criteria
-  
-  VERIFICATION_AREAS:
-    - Task objectives are crystal clear
-    - Success criteria are measurable  
-    - Technical approach is understood
-    - Dependencies are identified
-    - Scope boundaries are established
-  
-  REQUIREMENT: 100% understanding before proceeding to git workflow
-</understanding_verification>
+<intelligent_clarification>
+  IF implementation requirements are unclear OR confidence < 95%:
+    TRIGGER: @.cyberark-spec-os/instructions/meta/deep-clarification.md
+    FOCUS: What exactly needs to be built and how success will be measured
+  ELSE:
+    PROCEED: Continue with clear understanding
+</intelligent_clarification>
 
 </step>
 

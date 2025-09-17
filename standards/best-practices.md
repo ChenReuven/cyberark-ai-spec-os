@@ -56,43 +56,38 @@ When adding third-party dependencies:
   - Clear documentation
 </conditional-block>
 
-<conditional-block context-check="understanding-verification" task-condition="implementation-or-specification">
-IF current task involves implementation or specification work:
-  IF Understanding Verification section already read in current context:
+<conditional-block context-check="intelligent-clarification" task-condition="ambiguous-request">
+IF current task has ambiguity or unclear requirements:
+  IF Intelligent Clarification section already read in current context:
     SKIP: Re-reading this section
-    NOTE: "Using Understanding Verification guidelines already in context"
+    NOTE: "Using Intelligent Clarification guidelines already in context"
   ELSE:
-    READ: The following verification guidelines
+    READ: The following clarification guidelines
 
-## Understanding Verification
+## Intelligent Clarification
 
-### Feynman Technique Application
-- Always explain your understanding back to the user in simple terms before implementation
-- Break complex requirements into simple, clear components  
-- Ask "why" questions to understand the underlying purpose
-- Seek explicit confirmation that your understanding is accurate
+### When to Activate
+Only when genuinely needed:
+- User request is ambiguous or vague
+- Multiple interpretation possibilities exist
+- Technical approach is unclear
+- Scope boundaries are undefined
+- Success criteria are not clear
+- You have less than 95% confidence
 
-### Questioning Best Practices
-- Use numbered questions for clarity and organization
-- Focus on one concept per question to avoid confusion
-- Ask about edge cases and error handling conditions
-- Clarify success criteria and acceptance tests
-- Understand the "why" behind each requirement, not just the "what"
+### Core Process
+- If you have ANY questions, ask and iterate until full understanding
+- Use Feynman method: explain back in simple terms, then ask questions
+- Do NOT start implementation before you fully understand the task
 
-### Implementation Blocking Protocol
-- Never begin implementation with less than 95% understanding confidence
-- Always seek explicit user confirmation before proceeding ("yes", "correct", "that's right")
-- Document any assumptions and get them validated
-- Clarify ambiguous terms, requirements, and scope boundaries
-
-### Verification Checkpoints
-Apply understanding verification at these critical points:
-- After initial requirements gathering
-- Before creating technical specifications
-- Before beginning any implementation work
-- When encountering unclear requirements during development
-- Before making architectural or design decisions
+### Smart Questioning
+- Ask numbered questions for clarity
+- Focus on one concept per question
+- Continue asking until 100% confident
+- Always end with: "Are you 100% sure this approach would work?"
+- Always ask: "Do you have confidence with this solution?"
+- Always ask: "Do you have more questions for better understanding?"
 
 ELSE:
-  SKIP: Understanding verification not relevant to current task
+  SKIP: Request is clear, no clarification needed
 </conditional-block>

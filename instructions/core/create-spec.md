@@ -94,21 +94,13 @@ Use the context-fetcher subagent to clarify scope boundaries and technical consi
     PROCEED to_date_determination
 </decision_tree>
 
-<understanding_verification>
-  EXECUTE: Understanding verification protocol from pre-flight.md
-  
-  CONTEXT: Feature requirements and clarifications gathered
-  FOCUS: What needs to be specified and documented
-  
-  VERIFICATION_AREAS:
-    - Feature purpose and value is clear
-    - User stories are well-defined  
-    - Technical requirements are understood
-    - Scope boundaries are established
-    - Success criteria are measurable
-  
-  REQUIREMENT: 100% clarity on feature requirements before creating specification documents
-</understanding_verification>
+<intelligent_clarification>
+  IF feature requirements are ambiguous OR scope is undefined:
+    TRIGGER: @.cyberark-spec-os/instructions/meta/deep-clarification.md
+    FOCUS: Feature purpose, scope boundaries, and success criteria
+  ELSE:
+    PROCEED: Requirements are clear for specification
+</intelligent_clarification>
 
 </step>
 
