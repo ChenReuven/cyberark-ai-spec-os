@@ -22,29 +22,20 @@ Works seamlessly with both **greenfield** (new) and **brownfield** (existing) pr
 
 CyberArk Agentic Spec Driven Development works by layering context—just like you'd onboard a human developer:
 
-```mermaid
-graph TD
-    A[CyberArk Agentic Spec Driven Development] --> B[Layer 1: Your Standards]
-    A --> C[Layer 2: Your Product]
-    A --> D[Layer 3: Your Specs]
-    
-    B --> B1[Tech Stack<br/>Frameworks, libraries, tools]
-    B --> B2[Code Style<br/>Formatting rules, conventions]
-    B --> B3[Best Practices<br/>Development philosophy]
-    
-    C --> C1[Mission<br/>What you're building and why]
-    C --> C2[Roadmap<br/>Features shipped, in progress, planned]
-    C --> C3[Decisions<br/>Key architectural choices]
-    
-    D --> D1[Requirements<br/>Goals and user stories]
-    D --> D2[Technical Specs<br/>API design, database changes]
-    D --> D3[Task Breakdown<br/>Step-by-step implementation]
-    
-    style A fill:#667eea,stroke:#333,stroke-width:3px,color:#fff
-    style B fill:#f093fb,stroke:#333,stroke-width:2px,color:#fff
-    style C fill:#4facfe,stroke:#333,stroke-width:2px,color:#fff
-    style D fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
-```
+import sysLayers from '@site/static/img/sys-layers.png';
+import threeLayers from '@site/static/img/thre--layers.png';
+
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+  <img src={threeLayers} alt="Three Layers of Context: Specs, Product, and Standards" style={{maxWidth: '100%', height: 'auto'}} />
+  <p style={{fontSize: '0.9em', color: '#666'}}>
+    <strong>Three Layers of Context:</strong> The foundation of spec-driven development
+  </p>
+  
+  <img src={sysLayers} alt="System Architecture: Base Installation vs Project Installations" style={{maxWidth: '100%', height: 'auto', marginBottom: '1rem'}} />
+  <p style={{fontSize: '0.9em', color: '#666', marginBottom: '2rem'}}>
+    <strong>System Architecture:</strong> How base installations extend into project-specific implementations
+  </p>
+</div>
 
 ### 1. Your Standards
 - **Tech Stack** — Your frameworks, libraries, and tools
